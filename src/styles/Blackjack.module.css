@@ -1,0 +1,73 @@
+/* Container for the game */
+.container {
+  text-align: center;
+  padding: 2rem;
+  min-height: calc(100vh - 60px);
+  background-color: #121212;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+/* Container for both player and dealer hands */
+.handsContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+/* Individual hand container */
+.hand {
+  width: 45%;
+}
+
+/* Container for card images */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+/* Styling for card images */
+.card {
+  width: 80px;
+  height: auto;
+  margin: 15px;
+  font-size: 10rem;
+}
+
+/* Score display text */
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Button container */
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button styling */
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ffd700; /* gold color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffc107;
+}
+
+/* Outcome/message styling */
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}

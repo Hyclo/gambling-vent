@@ -1,0 +1,40 @@
+/* src/styles/GameCard.module.css */
+.card {
+  display: block;
+  background-color: #1e1e2f;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.cardImage {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  pointer-events: none;
+  padding: 15px;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.cardContent h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.cardContent p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}

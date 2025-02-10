@@ -1,0 +1,7 @@
+/* src/styles/Footer.module.css */
+.footer {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+}

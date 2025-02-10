@@ -1,0 +1,63 @@
+/* Container styling */
+.container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  min-height: calc(100vh - 60px);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+/* Multiplier display */
+.multiplierDisplay {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Rocket container for positioning the rocket */
+.rocketContainer {
+  position: relative;
+  height: 300px;
+  margin: 0 auto 2rem;
+  border: 2px dashed #444;
+  width: 100px;
+  overflow: hidden;
+}
+
+/* Rocket styling with smooth transform updates */
+.rocket {
+  display: inline-block;
+  font-size: 3rem;
+  transition: transform 0.1s linear;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Controls (buttons) styling */
+.controls {
+  margin-bottom: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #ffc107;
+}
+
+/* Outcome message styling */
+.outcome {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
