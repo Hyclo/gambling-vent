@@ -1,0 +1,54 @@
+/* Overall container styling */
+.container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: #fff;
+  min-height: calc(100vh - 26vh);
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the two dice (player and dealer) */
+.diceContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Individual dice container */
+.dice {
+  text-align: center;
+}
+
+/* Dice face styling: scale up the emoji and add a slight transition */
+.diceFace {
+  font-size: 6rem;
+  transition: transform 0.2s ease;
+}
+
+/* Controls styling */
+.controls {
+  margin: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #21a1f1;
+}
+
+/* Outcome/result text styling */
+.result {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}

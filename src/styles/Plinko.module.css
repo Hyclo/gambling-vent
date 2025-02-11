@@ -1,0 +1,63 @@
+/* Container for the game */
+.container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: #fff;
+  min-height: calc(100vh - 60px);
+  font-family: Arial, sans-serif;
+}
+
+/* Board container */
+.board {
+  position: relative;
+  margin: 0 auto;
+  background-color: #2b2b2b;
+  border: 2px solid #444;
+  border-radius: 8px;
+}
+
+/* Peg styling */
+.peg {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Ball styling */
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transition: left 0.5s ease, top 0.5s ease;
+}
+
+/* Controls container */
+.controls {
+  margin-top: 2rem;
+}
+
+/* Button styling */
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #21a1f1;
+}
+
+/* Result text styling */
+.result {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}

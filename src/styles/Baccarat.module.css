@@ -1,0 +1,93 @@
+/* Container styling */
+.container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: #fff;
+  min-height: calc(100vh - 60px);
+  font-family: Arial, sans-serif;
+}
+
+/* Bet selection area */
+.betSelection {
+  margin-bottom: 2rem;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.options label {
+  cursor: pointer;
+}
+
+/* Button styling */
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  background-color: #f0ad4e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ec971f;
+}
+
+/* Hands container */
+.handsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Individual hand container */
+.hand {
+  text-align: center;
+}
+
+/* Cards container with a flip animation */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  font-size: 3rem;
+  opacity: 0;
+  animation: flipIn 0.5s forwards;
+}
+
+/* Keyframes for flip animation */
+@keyframes flipIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Total score styling */
+.total {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Result message styling */
+.result {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}

@@ -93,6 +93,7 @@ export default function BlackjackGame() {
     "notStarted" | "playerTurn" | "dealerTurn" | "ended"
   >("notStarted");
   const [message, setMessage] = useState<string>("");
+  const [isPlayerDone, setPlayerDone] = useState<boolean>(false);
 
   const startGame = () => {
     const newDeck = shuffle(createDeck());
@@ -115,6 +116,7 @@ export default function BlackjackGame() {
     if (calculateHandValue(updatedHand) > 21) {
       setMessage("Bust! You lose.");
       setGameState("ended");
+      setPlayerDone(true);
     }
   };
 
@@ -143,6 +145,7 @@ export default function BlackjackGame() {
     }
     setMessage(`Player: ${playerScore} vs Dealer: ${dealerScore}. ${outcome}`);
     setGameState("ended");
+    setPlayerDone(true);
   };
 
   const resetGame = () => {
@@ -151,6 +154,7 @@ export default function BlackjackGame() {
     setDealerHand([]);
     setGameState("notStarted");
     setMessage("");
+    setPlayerDone(false);
   };
 
   return (
@@ -170,7 +174,7 @@ export default function BlackjackGame() {
             <div className={styles.cards}>
               {dealerHand.map((card, index) => (
                 <span key={index} className={styles.card}>
-                  {getCardEmoji(card)}
+                  { index === 1 && !isPlayerDone === true ? "🂠" : getCardEmoji(card) }
                 </span>
               ))}
             </div>
