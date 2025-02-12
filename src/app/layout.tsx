@@ -5,8 +5,8 @@ import Footer from "../components/Footer";
 import type { ReactNode } from "react";
 
 export const metadata = {
-  title: "Safe Gambling",
-  description: "Simulated gambling with in-game currency",
+  title: "Gambling-Vent",
+  description: "A collection of casino games, to play and have fun.",
 };
 
 interface RootLayoutProps {
